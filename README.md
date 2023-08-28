@@ -90,13 +90,6 @@ main()
     await prisma.$disconnect()
     process.exit(1)
   })
-
-  /*
-     Prisma Doc | Seeding your database
-     https://www.prisma.io/docs/guides/migrate/seed-database
-
-     npx prisma db seed 
-  */
 ```
 
 ### V. Browse the data
