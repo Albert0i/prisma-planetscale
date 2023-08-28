@@ -6,11 +6,10 @@ async function main() {
   const user = await prisma.user.create({
     data: {
       name: 'Bob',
-      email: 'bob@prisma.io',
+      email: 'bob2@prisma.io',
       posts: {
         create: {
           title: 'Hello World',
-          subtitle: '---', 
           content: 'node script3.js '
         },
       },
