@@ -1,6 +1,8 @@
 ## Primsa x Planetscale --- A starter guide 
 
+
 ### Prologue 
+
 
 ### I. Initialize project 
 ```
@@ -10,6 +12,7 @@ npm install prisma --save-dev
 
 npx prisma init --datasource-provider mysql 
 ```
+
 
 ### II. Prepare the schema
 prisma/schema.prisma
@@ -31,10 +34,12 @@ model Post {
 }
 ```
 
+
 ### III. Create database tables 
 ```
 npx prisma migrate dev --name init
 ```
+
 
 ### IV. Seeding the data
 prisma/seed.prisma
@@ -92,10 +97,12 @@ main()
   })
 ```
 
+
 ### V. Browse the data
 ```
 npx prisma studio
 ```
+
 
 ### VI. Summary 
 
