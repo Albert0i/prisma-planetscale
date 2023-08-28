@@ -3,10 +3,10 @@
 
 ### Prologue 
 
-[Do I need an ORM in the first place?](https://www.prisma.io/dataguide/types/relational/what-is-an-orm)
-> In general, an ORM might be a good fit if you are using many object-oriented features of your language to manage a lot of state. The implications of managing state encapsulated in objects that have complex inheritance relationships, for instance, may be difficult to account for manually. They can also help get your project off the ground easier and can manage changes in your data structure through functionality like schema migration.
+[Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm)
 
-> While ORMs are often useful, they're not perfect. Sometimes the level of abstraction introduced by an ORM can make debugging difficult. There are also times when the representation the ORM uses to translate between the database and your application might not be completely accurate or might leak details of your internal implementation. These may be problems for certain use cases.
+[Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma)
+
 
 ### I. Initialize project 
 ```
