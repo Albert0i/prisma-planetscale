@@ -13,10 +13,28 @@ npm install prisma --save-dev
 npx prisma init --datasource-provider mysql 
 ```
 
+.env
+```
+DATABASE_URL="mysql://<username>:<password>@<host>:<port>/<dbname>"
+
+SHADOW_DATABASE_URL='mysql://<username>:<password>@<host>/<dbname>'
+```
+
 
 ### II. Prepare the schema
 prisma/schema.prisma
 ```
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  relationMode      = "prisma"
+}
+
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
