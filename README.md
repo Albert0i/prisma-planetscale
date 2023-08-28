@@ -1,4 +1,4 @@
-## Primsa x Planetscale --- A starter guide 
+## Primsa x Planetscale ─── A starter guide 
 
 
 ### Prologue 
