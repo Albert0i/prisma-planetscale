@@ -131,9 +131,11 @@ npx prisma studio
 3. [Prisma | Schema](https://www.prisma.io/docs/concepts/components/prisma-schema)
 4. [Prisma | Relation mode](https://www.prisma.io/docs/concepts/components/prisma-schema/relations/relation-mode)
 5. [Prisma | About the shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database)
-6. [Planetscale | quickstart guide](https://planetscale.com/docs/tutorials/planetscale-quick-start-guide)
-7. [Planetscale | Operating without foreign key constraints](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints)
-8. [The Sphinx](https://poemuseum.org/the-sphinx/)
+6. [Prisma | Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
+7. [Planetscale | quickstart guide](https://planetscale.com/docs/tutorials/planetscale-quick-start-guide)
+8. [Planetscale | Operating without foreign key constraints](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints)
+9. [Planetscale | Pricing](https://planetscale.com/pricing)
+10. [The Sphinx](https://poemuseum.org/the-sphinx/)
 
 
 ### Epilogue
