@@ -174,7 +174,7 @@ npx prisma studio
 ![alt studio-2](img/studio-2.JPG)
 
 ### VI. Summary 
-Repeating modifying schema and migrating would cause [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** folder and re-migrate, re-seed the tables again. Due to the limitation on my Planetscale free plan, A shadow url is required. This is where my [laragon](https://laragon.org/index.html) comes into play. 
+Repeating modifying schema and migrating would cause [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** folder and re-migrate, re-seed the tables again. Due to the limitation on my Planetscale free plan, a shadow url is required. This is where my [laragon](https://laragon.org/index.html) comes into play. 
 
 ![alt laragon](/img/laragon.JPG)
 
