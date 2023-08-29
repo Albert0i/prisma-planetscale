@@ -99,7 +99,7 @@ model Post {
 
 ### III. Create database tables 
 ```
-npx prisma migrate dev --name init
+npx prisma migrate dev --name initial load
 ```
 ![alt migrate](img/migrate.JPG)
 
