@@ -182,7 +182,7 @@ npx prisma studio
 
 
 ### Epilogue
-> I remember his insisting very especially (among other things) upon the idea that a principle source of error in all human investigations, lay in the liability of the understanding to under-rate or to over-value the importance of an object, through mere mis-admeasurement of its propinquity.
+> ... upon the idea that a principle source of error in all human investigations, lay in the liability of the understanding to under-rate or to over-value the importance of an object, through mere mis-admeasurement of its propinquity.
 
 ![alt sphinx](img/Sphinx-674x1024.jpg)
 
