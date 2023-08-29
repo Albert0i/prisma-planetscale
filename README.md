@@ -2,11 +2,15 @@
 
 
 ### Prologue 
-Changing one's viewpoint is easy; changing one's mindset is difficult. 
+Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
 
-[Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm)
+[Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma)
 
-[Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma)
+> In general, an ORM might be a good fit if you are using many object-oriented features of your language to manage a lot of state. The implications of managing state encapsulated in objects that have complex inheritance relationships, for instance, may be difficult to account for manually. They can also help get your project off the ground easier and can manage changes in your data structure through functionality like schema migration.
+
+> While ORMs are often useful, they're not perfect. Sometimes the level of abstraction introduced by an ORM can make debugging difficult. There are also times when the representation the ORM uses to translate between the database and your application might not be completely accurate or might leak details of your internal implementation. These may be problems for certain use cases.
+
+> Prisma makes it easy for developers to reason about their database queries by providing a clean and type-safe API for submitting database queries which returns plain old JavaScript objects.
 
 ```
 npx prisma --help
@@ -58,19 +62,30 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+  id    Int    @id @default(autoincrement())
+  email String @unique
+  name  String
   posts Post[]
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+
+  @@map("users")
 }
 
 model Post {
   id        Int     @id @default(autoincrement())
   title     String
-  content   String?
+  content   String
   published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
+  user      User    @relation(fields: [userId], references: [id])
+  userId    Int
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+
+  @@index([userId])
+  @@map("posts")
 }
 ```
 
@@ -137,6 +152,10 @@ main()
   })
 ```
 
+```
+npx prisma db seed 
+```
+
 
 ### V. Browse the data
 ```
@@ -148,16 +167,18 @@ npx prisma studio
 
 
 ### VII. Reference
-1. [Prisma | Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
-2. [Prisma | MySQL](https://www.prisma.io/docs/concepts/database-connectors/mysql)
-3. [Prisma | Schema](https://www.prisma.io/docs/concepts/components/prisma-schema)
-4. [Prisma | Relation mode](https://www.prisma.io/docs/concepts/components/prisma-schema/relations/relation-mode)
-5. [Prisma | About the shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database)
-6. [Prisma | Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
-7. [Planetscale | quickstart guide](https://planetscale.com/docs/tutorials/planetscale-quick-start-guide)
-8. [Planetscale | Operating without foreign key constraints](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints)
-9. [Planetscale | Pricing](https://planetscale.com/pricing)
-10. [The Sphinx](https://poemuseum.org/the-sphinx/)
+1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
+2. [Prisma | Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
+3. [Prisma | MySQL](https://www.prisma.io/docs/concepts/database-connectors/mysql)
+4. [Prisma | Schema](https://www.prisma.io/docs/concepts/components/prisma-schema)
+5. [Prisma | Relation mode](https://www.prisma.io/docs/concepts/components/prisma-schema/relations/relation-mode)
+6. [Prisma | About the shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database)
+7. [Prisma | Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
+8. [A cheat sheet repository of prisma ORM - GitHub]()
+9. [Planetscale | quickstart guide](https://planetscale.com/docs/tutorials/planetscale-quick-start-guide)
+10. [Planetscale | Operating without foreign key constraints](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints)
+11. [Planetscale | Pricing](https://planetscale.com/pricing)
+12. [The Sphinx](https://poemuseum.org/the-sphinx/)
 
 
 ### Epilogue
