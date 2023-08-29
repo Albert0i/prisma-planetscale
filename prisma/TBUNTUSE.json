@@ -1,0 +1,18 @@
+{ "tbuntuse": [
+    {"huntuse":"A", "uusedc":"貨倉", "uusedp":"ARMAZEM", "update_ident":1},
+    {"huntuse":"B", "uusedc":"商業+社會", "uusedp":"MISTA C+S", "update_ident":1}, 
+    {"huntuse":"C", "uusedc":"商業", "uusedp":"COMERCIO", "update_ident":1},
+    {"huntuse":"D", "uusedc":"不詳", "uusedp":"DESCONHECIDA", "update_ident":1},
+    {"huntuse":"E", "uusedc":"活動", "uusedp":"ACTIVIDADE", "update_ident":1}, 
+    {"huntuse":"H", "uusedc":"居住", "uusedp":"HABITACAO", "update_ident":1}, 
+    {"huntuse":"I", "uusedc":"工業", "uusedp":"INDUSTRIA", "update_ident":1}, 
+    {"huntuse":"J", "uusedc":"居住+貨倉", "uusedp":"MISTA H+A", "update_ident":1}, 
+    {"huntuse":"K", "uusedc":"居住+商業", "uusedp":"MISTA H+C", "update_ident":1}, 
+    {"huntuse":"L", "uusedc":"居住+工業", "uusedp":"MISTA H+I", "update_ident":1}, 
+    {"huntuse":"M", "uusedc":"居住+工場", "uusedp":"MISTA H+O", "update_ident":1}, 
+    {"huntuse":"N", "uusedc":"居住+社會", "uusedp":"MISTA H+S", "update_ident":1}, 
+    {"huntuse":"O", "uusedc":"工場", "uusedp":"OFICINA", "update_ident":1}, 
+    {"huntuse":"P", "uusedc":"畜牧", "uusedp":"PECUARIA", "update_ident":1}, 
+    {"huntuse":"S", "uusedc":"社會", "uusedp":"SOCIAL", "update_ident":1}, 
+    {"huntuse":"X", "uusedc":"未確定", "uusedp":"N/REFERENCIA", "update_ident":1}
+] }

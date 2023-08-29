@@ -2,10 +2,28 @@
 
 
 ### Prologue 
+Changing one's viewpoint is easy; changing one's mindset is difficult. 
 
 [Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm)
 
 [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma)
+
+```
+npx prisma --help
+Prisma is a modern DB toolkit to query, migrate and model your database (https://prisma.io)
+
+Usage
+  $ prisma [command]
+
+Commands
+        init  Set up Prisma for your app
+    generate  Generate artifacts (e.g. Prisma Client)
+          db  Manage your database schema and lifecycle
+      migrate Migrate your database
+      studio  Browse your data with Prisma Studio
+    validate  Validate your Prisma schema
+      format  Format your Prisma schema
+```
 
 
 ### I. Initialize project 

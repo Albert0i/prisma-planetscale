@@ -17,6 +17,7 @@ model User {
 
   createdAt DateTime  @default(now())
   updatedAt DateTime? @updatedAt
+
   @@map("users")
 }
 
@@ -30,6 +31,23 @@ model Post {
 
   createdAt DateTime  @default(now())
   updatedAt DateTime? @updatedAt
+
   @@index([userId])
   @@map("posts")
+}
+
+// CREATE TABLE TBUNTUSE
+//  (
+//   HUNTUSE CHAR(2), 
+//   UUSEDC VARCHAR2(40 CHAR), 
+//   UUSEDP VARCHAR2(40 CHAR), 
+//   UPDATE_IDENT DECIMAL(7, 0) DEFAULT 0
+//  );
+model Tbuntuse {
+  huntuse      String @id
+  uusedc       String 
+  uusedp       String 
+  update_ident Int @default(0)
+
+  @@map("tbuntuse")
 }
