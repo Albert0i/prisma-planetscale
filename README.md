@@ -12,6 +12,13 @@ Some people profess that ORM is the solution while others despise and curse... [
 
 > Prisma makes it easy for developers to reason about their database queries by providing a clean and type-safe API for submitting database queries which returns plain old JavaScript objects.
 
+![alt compare-chart](https://www.prisma.io/docs/static/8895b58d65c1884e3fb014da1099bce2/d880f/node-js-db-tools-tradeoffs.png)
+
+
+- Raw SQL: Full control, low productivity
+- SQL query builders: High control, medium productivity
+- ORMs: Less control, better productivity
+
 ```
 npx prisma --help
 Prisma is a modern DB toolkit to query, migrate and model your database (https://prisma.io)
