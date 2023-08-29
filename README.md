@@ -190,7 +190,7 @@ Repeating modifying schema and migrating would cause [migration errors](https://
 5. [Prisma | Relation mode](https://www.prisma.io/docs/concepts/components/prisma-schema/relations/relation-mode)
 6. [Prisma | About the shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database)
 7. [Prisma | Seeding your database](https://www.prisma.io/docs/guides/migrate/seed-database)
-8. [A cheat sheet repository of prisma ORM - GitHub]()
+8. [A cheat sheet repository of prisma ORM - GitHub](https://github.com/emanuelefavero/prisma)
 9. [Planetscale | quickstart guide](https://planetscale.com/docs/tutorials/planetscale-quick-start-guide)
 10. [Planetscale | Operating without foreign key constraints](https://planetscale.com/docs/learn/operating-without-foreign-key-constraints)
 11. [Planetscale | Pricing](https://planetscale.com/pricing)
