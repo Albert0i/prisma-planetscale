@@ -1,10 +1,11 @@
-## Primsa x Planetscale ── A starter guide 
+## [Primsa](https://www.prisma.io/) x [Planetscale](https://planetscale.com/) ── A starter guide 
 
 
 ### Prologue 
 Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
 
-Some people profess that ORM is the solution while others despise and curse... [Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma)
+
+[Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma) and [How Prisma and PlanetScale fit together](https://www.prisma.io/planetscale).
 
 > In general, an ORM might be a good fit if you are using many object-oriented features of your language to manage a lot of state. The implications of managing state encapsulated in objects that have complex inheritance relationships, for instance, may be difficult to account for manually. They can also help get your project off the ground easier and can manage changes in your data structure through functionality like schema migration.
 
@@ -13,7 +14,6 @@ Some people profess that ORM is the solution while others despise and curse... [
 > Prisma makes it easy for developers to reason about their database queries by providing a clean and type-safe API for submitting database queries which returns plain old JavaScript objects.
 
 ![alt compare-chart](https://www.prisma.io/docs/static/8895b58d65c1884e3fb014da1099bce2/d880f/node-js-db-tools-tradeoffs.png)
-
 
 - Raw SQL: Full control, low productivity
 - SQL query builders: High control, medium productivity
@@ -101,6 +101,7 @@ model Post {
 ```
 npx prisma migrate dev --name init
 ```
+![alt migrate](img/migrate.JPG)
 
 
 ### IV. Seeding the data
@@ -162,15 +163,21 @@ main()
 ```
 npx prisma db seed 
 ```
+![alt seed](img/seed.JPG)
 
 
 ### V. Browse the data
 ```
 npx prisma studio
 ```
+![alt studio-1](img/studio-1.JPG)
 
+![alt studio-2](img/studio-2.JPG)
 
 ### VI. Summary 
+Repeating modifying schema and migrating would cause various [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** and re-migrate, re-seed the tables again. Due to the limitation of free Planetscale account, I need to provide a shadow database url. This is where my [laragon](https://laragon.org/index.html) comes into play. 
+
+![alt laragon](/img/laragon.JPG)
 
 
 ### VII. Reference
