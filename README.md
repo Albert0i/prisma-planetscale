@@ -104,7 +104,7 @@ npx prisma migrate dev --name initial load
 
 
 ### IV. Seeding the data
-prisma/seed.prisma
+prisma/seed.js
 ```
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
