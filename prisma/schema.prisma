@@ -45,12 +45,13 @@ model Post {
 //  );
 model Tbuntuse {
   huntuse      String @id
-  uusedc       String 
-  uusedp       String 
-  update_ident Int @default(0)
+  uusedc       String
+  uusedp       String
+  update_ident Int    @default(0)
 
   @@map("tbuntuse")
 }
+
 // 
 // Migration troubleshooting in production
 // https://pris.ly/d/migrate-resolve
