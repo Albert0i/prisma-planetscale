@@ -51,3 +51,7 @@ model Tbuntuse {
 
   @@map("tbuntuse")
 }
+// 
+// Migration troubleshooting in production
+// https://pris.ly/d/migrate-resolve
+// 
