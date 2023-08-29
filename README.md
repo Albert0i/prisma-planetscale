@@ -7,7 +7,9 @@ Changing one's viewpoint is easy; changing one's mindset is difficult but not *i
 
 ### I. Introduction 
 [Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? 
+
 [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma) and 
+
 [How Prisma and PlanetScale fit together](https://www.prisma.io/planetscale).
 
 > In general, an ORM might be a good fit if you are using many object-oriented features of your language to manage a lot of state. The implications of managing state encapsulated in objects that have complex inheritance relationships, for instance, may be difficult to account for manually. They can also help get your project off the ground easier and can manage changes in your data structure through functionality like schema migration.
