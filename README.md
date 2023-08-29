@@ -4,6 +4,8 @@
 ### Prologue 
 Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
 
+
+### I. Introduction 
 [Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma) and [How Prisma and PlanetScale fit together](https://www.prisma.io/planetscale).
 
 > In general, an ORM might be a good fit if you are using many object-oriented features of your language to manage a lot of state. The implications of managing state encapsulated in objects that have complex inheritance relationships, for instance, may be difficult to account for manually. They can also help get your project off the ground easier and can manage changes in your data structure through functionality like schema migration.
@@ -36,7 +38,7 @@ Commands
 ```
 
 
-### I. Initialize project 
+### II. Initialize project 
 ```
 npm -y 
 
@@ -53,7 +55,7 @@ SHADOW_DATABASE_URL='mysql://<username>:<password>@<host>/<dbname>'
 ```
 
 
-### II. Prepare the schema
+### III. Prepare the schema
 prisma/schema.prisma
 ```
 generator client {
@@ -96,14 +98,14 @@ model Post {
 ```
 
 
-### III. Create database tables 
+### IV. Create database tables 
 ```
 npx prisma migrate dev --name initial load
 ```
 ![alt migrate](img/migrate.JPG)
 
 
-### IV. Seeding the data
+### V. Seeding the data
 prisma/seed.js
 ```
 import { PrismaClient } from '@prisma/client'
@@ -165,7 +167,7 @@ npx prisma db seed
 ![alt seed](img/seed.JPG)
 
 
-### V. Browse the data
+### VI. Browse the data
 ```
 npx prisma studio
 ```
@@ -173,13 +175,14 @@ npx prisma studio
 
 ![alt studio-2](img/studio-2.JPG)
 
-### VI. Summary 
+
+### VII. Summary 
 Repeating modifying schema and migrating would cause [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** folder and re-migrate, re-seed the tables again. Due to the limitation on my Planetscale free plan, a shadow url is required. This is where my [laragon](https://laragon.org/index.html) comes into play. 
 
 ![alt laragon](/img/laragon.JPG)
 
 
-### VII. Reference
+### VIII. Reference
 1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
 2. [Prisma | Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
 3. [Prisma | MySQL](https://www.prisma.io/docs/concepts/database-connectors/mysql)
@@ -198,5 +201,6 @@ Repeating modifying schema and migrating would cause [migration errors](https://
 > ... upon the idea that a principle source of error in all human investigations, lay in the liability of the understanding to under-rate or to over-value the importance of an object, through mere mis-admeasurement of its propinquity.
 
 ![alt sphinx](img/Sphinx-674x1024.jpg)
+
 
 ### EOF (2023/08/28)
