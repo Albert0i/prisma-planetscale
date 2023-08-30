@@ -9,7 +9,9 @@
     "studio": "npx prisma studio",
     "validate": "npx prisma validate",
     "format": "npx prisma format",
-    "seed": "npx prisma db seed"
+    "seed": "npx prisma db seed", 
+    "push": "npx prisma db push", 
+    "pull": "npx prisma db pull" 
   },
   "keywords": [],
   "author": "",
