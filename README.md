@@ -4,6 +4,8 @@
 ### Prologue 
 Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. But how long does it take? I not know... People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
 
+Sometimes mindset can be changed by certain incident or accident, while most of us will maintain ours till death. 
+
 
 ### I. Introduction 
 [Do I need an ORM](https://www.prisma.io/dataguide/types/relational/what-is-an-orm) in the first place? [Why Prisma?](https://www.prisma.io/docs/concepts/overview/why-prisma) and [How Prisma and PlanetScale fit together](https://www.prisma.io/planetscale).
