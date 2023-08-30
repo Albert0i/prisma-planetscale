@@ -2,7 +2,7 @@
 
 
 ### Prologue 
-Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
+Changing one's viewpoint is easy; changing one's mindset is difficult but not *impossible*. But how long does it take? I not know... People are largely divided into either *liberal* or *conservative* in terms of ideology. Whether believing in ghost or UFO has nothing to do with one's education backgrounds and so does one's political tendency. 
 
 
 ### I. Introduction 
@@ -175,6 +175,7 @@ npx prisma studio
 
 ![alt studio-2](img/studio-2.JPG)
 
+![alt web-console](img/web-console.JPG)
 
 ### VII. Summary 
 Repeating modifying schema and migrating would cause [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** folder and re-migrate, re-seed the tables again. Due to the limitation on my Planetscale free plan, a shadow url is required. This is where my [laragon](https://laragon.org/index.html) comes into play. 
