@@ -177,15 +177,29 @@ npx prisma studio
 
 ![alt studio-2](img/studio-2.JPG)
 
+
+### VII. Planetscale 
+
+![alt planetscale1](/img/planetscale-1.JPG)
+
+![alt planetscale2](/img/planetscale-2.JPG)
+
+![alt planetscale3](/img/planetscale-3.JPG)
+
+![alt planetscale4](/img/planetscale-4.JPG)
+
+![alt planetscale5](/img/planetscale-5.JPG)
+
 ![alt web-console](img/web-console.JPG)
 
-### VII. Summary 
+
+### VIII. Summary 
 Repeating modifying schema and migrating would cause [migration errors](https://www.prisma.io/docs/guides/migrate/production-troubleshooting#failed-migration). I just can't figure out why and how to fix it. The easiest way is to completely remove the **migrations** folder and re-migrate, re-seed the tables again. Due to the limitation on my Planetscale free plan, a shadow url is required. This is where my [laragon](https://laragon.org/index.html) comes into play. 
 
 ![alt laragon](/img/laragon.JPG)
 
 
-### VIII. Reference
+### IX. Reference
 1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
 2. [Prisma | Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
 3. [Prisma | MySQL](https://www.prisma.io/docs/concepts/database-connectors/mysql)

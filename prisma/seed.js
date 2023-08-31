@@ -8,11 +8,26 @@ async function main() {
       email: 'alice@prisma.io',
       name: 'Alice',
       posts: {
-        create: {
-          title: 'Check out Prisma with Next.js',
-          content: 'https://www.prisma.io/nextjs',
-          published: true,
-        },
+        create: [
+          {
+            title: 'Check out Prisma with Next.js',
+            content: 'https://www.prisma.io/nextjs',
+            published: true,
+            comments: {
+              create: [
+                {
+                  comment: "Very well"
+                },
+                {
+                  comment: "Very bad"
+                },
+                {
+                  comment: "No idea"
+                }
+              ]
+            }
+          }
+        ],
       },
     },
   })
@@ -28,11 +43,21 @@ async function main() {
             title: 'Follow Prisma on Twitter',
             content: 'https://twitter.com/prisma',
             published: true,
+            comments: {
+              create: {
+                comment: "Not bad"
+              }
+            }
           },
           {
             title: 'Follow Nexus on Twitter',
             content: 'https://twitter.com/nexusgql',
             published: true,
+            comments: {
+              create: {
+                comment: "Not good"
+              }
+            }
           },
         ],
       },
