@@ -2,7 +2,7 @@
 ## "The Myth and Riddle of ORM"
 
 ### Prologue
-I was both delighted and agitated upon seeing her. She was born on late '80s of last century, I heard of and knew of her since I was in the University. Speaking of her beautifullines, it was simplicity on one side and complexity on the other. Difficult to comprehend at first glance but even more abstruse to apprehend on second thought. Her visage has evolved over times but with enriched youthfulness then before. Communicatopm between us is done via more or less the same language since acquaintance. She never betrays me, never fails me in any aspects of my working life. As you may guess, she is ... 
+I was both delighted and agitated upon seeing her. She was born on late '80s of last century, I heard of and knew of her since I was in the University. Speaking of her beautifullines, it was simplicity on one side and complexity on the other. Difficult to comprehend at first glance but even more abstruse to apprehend on second thought. Her visage has evolved over times but with enriched youthfulness then before. Communication between us is done via more or less the same language since acquaintance. She never betrays me, never fails me in any aspects of my working life. As you may guess, she is ... 
 
 
 ### I. Do I really need ORM? (TL;DR)
