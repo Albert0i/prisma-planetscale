@@ -30,6 +30,13 @@ SQL knowledge is crucial, I can't fancy any chance it will decline in the future
 ### IV. Summary 
 
 ### V. Reference
+1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
+2. [Prisma Doc | Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access)
+3. [Prisma Doc | Error message reference](https://www.prisma.io/docs/reference/api-reference/error-reference)
+4. [Prisma Client API reference](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#prismaclient)
+5. [Configuring logging](https://www.prisma.io/docs/concepts/components/prisma-client/working-with-prismaclient/logging)
+5. [Hop-Frog](https://poemuseum.org/hop-frog/)
+
 
 ### Epilogue
 
