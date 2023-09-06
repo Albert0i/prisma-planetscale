@@ -10,9 +10,9 @@ In the 1980s and ’90s, relational databases grew increasingly dominant, crowne
 - Since SQL is *de facto* standard in data manipulation. Why bother to learn another ways? 
 - If SQL knowledge is vital, why bother to learn another tools? 
 - The popularity of NoSQL doesn't impede or hazard the orthodoxy of relational database and so does SQL. 
-- If we can not get rid of it, get alone with it. 
+- If we can't get rid of it, get alone with it. 
 
-Virtually and effectively, SQL is the standard way to manipulate database. But may not be proper or most efficient to handle data especially for object-oriented languages. Most popular modern programming languages derive from [C++](https://www.w3schools.com/cpp/cpp_intro.asp), which instead retrofitted somewhat from [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk). Traditionally, relational database consists of tables, indexex, stored procedures and functions but has no idea of object whatsoever. See the glitch? 
+Virtually and effectively, SQL is the standard way to manipulate database. But may not be proper or most efficient way to handle data especially for object-oriented languages. Most popular modern programming languages derive from [C++](https://www.w3schools.com/cpp/cpp_intro.asp), which instead retrofitted somewhat from [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk). Traditionally, relational database consists of tables, indexex, stored procedures and functions but has no idea of object whatsoever. See the glitch? 
 
 The more difference in abstraction levels, the more modulation is necessitated, ie. to convert objets to and fro table rows required human intervention, they are not in the same row. In addition, operations to object are conceptionally and practically different from those to database table. To alleviate mental labour, one always introduces an *abstraction layer* so that our programs can operate on the same level, so that they work smoothly. The appellation of abstraction layer is commonly known as "data access layer" or something like that. DAL wraps function calls and transform to database calls; read data from relation database and convert to object and return it to the invokers. 
 
