@@ -127,4 +127,27 @@ npx prisma migrate dev
 
 ### Epilogue
 
+```
+CREATE TABLE fruits (
+    id INTEGER NOT NULL AUTO_INCREMENT,    
+    name VARCHAR(191) NOT NULL, 
+    update_ident INTEGER DEFAULT 0, 
+
+    PRIMARY KEY (id)
+);
+
+insert into fruits(name) values('Ourang-Outangs');
+
+DELIMITER $$
+CREATE TRIGGER before_update_fruits
+BEFORE UPDATE
+ON fruits FOR EACH ROW
+BEGIN
+    SET new.update_ident = old.update_ident + 1; 
+END$$
+DELIMITER ;
+
+update fruits set name='Ourang-Outangs' where id=1;
+```
+
 ### EOF (2023/09/06)
