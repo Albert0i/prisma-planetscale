@@ -109,12 +109,82 @@ npx prisma migrate dev
 
 
 ### III. The Cost 
-> "ORMs are nerds, only generate stupid, inefficient and dubious SQL statements that potentially harmful and thus ruin my project. Besides, if the ORM vendor closes down, my project would quickly becomes an unattended orphan." 
+> "ORMs are nerds! they generate stupid, inefficient and dubious SQL statements that potentially harmful and hazardous and henceforth ruin my project. Besides, if the vendor goes out of business, my project will be left unattended forthwith." 
+
+> "Keeping the model in line with database tables is a drudgery. How do I know they are sychronized?" 
 
 > "ORMs are incredulous, I want to keep track of every *single* line of SQL statements under the hook."
 
+Let's continue our discussion: 
+> Use the `PrismaClient` [log](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#log) parameter to configure [log levels](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#log-levels), including warnings, errors, and information about the queries sent to the database.
+
+lib/prisma.js
+```
+import { PrismaClient } from "@prisma/client";
+
+const prisma = global.prisma || new PrismaClient({
+        log: [{
+          emit: 'event',
+          level: 'query',
+        }],
+      });
+
+if (process.env.NODE_ENV === "development")
+{
+  global.prisma = prisma;
+  prisma.$on('query', (e) => {
+    console.log('Query: ' + e.query)
+    console.log('Params: ' + e.params)
+    console.log('Duration: ' + e.duration + 'ms')
+  })
+}
+
+export default prisma;
+```
+
+script6.js
+```
+import prisma from './lib/prisma.js'
+
+prisma.post.findUnique({ 
+                where: { id: 1 }
+            })
+            .then(rec => { 
+                prisma.post.update({
+                    where: { id: 1 },
+                    data: { views: rec.views + 1,
+                            likes: rec.likes + 1 }
+                })
+                .then( res => console.log('new res=', res))
+            } )
+```
+
+![alt query1](img/query1.JPG)
+
+![alt query1](img/query2.JPG)
+
+- The `findUnique` transforms into a `SELECT` statement; 
+- The `update` transforms into one `SELECT` to check existence, one `UPDATE` to update the data, the last `SELECT` to return the updated record;
+- Hand coding can cut it down into one `UPDATE` and one `SELECT` because existence check can be offset by checking [mysql_affected_rows()](https://dev.mysql.com/doc/c-api/8.0/en/mysql-affected-rows.html) after `UPDATE`. 
+
+Any company could close down at any moment. The article [Top 11 Node.js ORMs, query builders & database libraries in 2022](https://www.prisma.io/dataguide/database-tools/top-nodejs-orms-query-builders-and-database-libraries) shows that Prisma, which support wide range of popular [databases](https://www.prisma.io/docs/reference/database-reference/supported-databases) with the exception of Oracle, is in a tailwind and nobody could tell how long it will last... [Nothing is Certain Except Death and Taxes](https://www.firstexchange.com/Nothing-is-Certain-Except-Death-and-Taxes). This is perhaps the elegy of IT industry, the elegy of our peers. 
+
+Keeping model synchronized is tedious and error-prone. That's why Prisma has introducted the concept of [`migration`](https://www.prisma.io/docs/reference/api-reference/command-reference#migrate-dev). 
+
+```
+npx prisma migrate dev
+```
+- Reruns the existing migration history in the [shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database) in order to detect schema drift (edited or deleted migration file, or a manual changes to the database schema)
+- Applies pending migrations to the shadow database (for example, new migrations created by colleagues)
+- Generates a new migration from any changes you made to the Prisma schema before running `migrate dev`
+- Applies all unapplied migrations to the development database and updates the `_prisma_migrations` table
+- Triggers the generation of artifacts (for example, Prisma Client)
+
+All generated SQL DDL souces are store on `migrations` folder and will help whenever necessary. 
+
 
 ### IV. Summary 
+
 
 ### V. Reference
 1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
