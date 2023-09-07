@@ -182,7 +182,7 @@ npx prisma migrate dev
 - Applies all unapplied migrations to the development database and updates the `_prisma_migrations` table
 - Triggers the generation of artifacts (for example, Prisma Client)
 
-All generated SQL DDL souces are store on `migrations` folder and will help whenever necessary. 
+All generated SQL DDL souces are store under `migrations` folder and will help whenever necessary. 
 
 
 ### IV. Summary 
