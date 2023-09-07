@@ -109,7 +109,7 @@ npx prisma migrate dev
 
 
 ### III. The Cost 
-> "ORMs are nerds! they generate stupid, inefficient and dubious SQL statements that potentially harmful and hazardous and henceforth ruin my project. Besides, if the vendor goes out of business, my project will be left unattended forthwith." 
+> "ORMs are nerds! they generate stupid, inefficient and dubious SQL statements that potentially harmful, hazardous and henceforth ruin my project. Besides, if the vendor goes out of business, my project will be left unattended forthwith." 
 
 > "Keeping the model in line with database tables is a drudgery. How do I know they are sychronized?" 
 
