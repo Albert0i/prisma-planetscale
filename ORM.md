@@ -186,6 +186,12 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 
 
 ### IV. Summary 
+- Prisma is not your cup of tea if are not using [NodeJS](https://nodejs.org/en) and related technique. 
+
+- If you are from .NET family, you should think about [Entity Framework](https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-8.0/plan). 
+
+- if you are not using PostgreSQL, MySQL, SQLite, Microsoft SQL Server, MongoDB
+or CockroachDB then Prisma won't work for you. 
 
 
 ### V. Reference
@@ -198,7 +204,6 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 
 
 ### Epilogue
-
 ```
 CREATE TABLE fruits (
     id INTEGER NOT NULL AUTO_INCREMENT,    
@@ -221,5 +226,6 @@ DELIMITER ;
 
 update fruits set name='Ourang-Outangs' where id=1;
 ```
+
 
 ### EOF (2023/09/06)
