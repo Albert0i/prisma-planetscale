@@ -101,14 +101,17 @@ npx prisma db push
 ```
 > Push the state from Prisma schema to the database during *prototyping*
 
-To synchronize database tables with existing models. 
+To synchronize database tables with models. 
 ```
 npx prisma migrate dev
 ```
-> Create a migration from changes in Prisma schema, apply it to the database trigger generators (e.g. Prisma Client)
+> Create a *migration* from changes in Prisma schema, apply it to the database trigger generators (e.g. Prisma Client)
 
 
 ### III. The Cost 
+> "ORMs are nerds, only generate stupid, inefficient and dubious SQL statements that potentially harmful and thus ruin my project. Besides, if the ORM vendor closes down, my project would quickly becomes an unattended orphan." 
+
+> "ORMs are incredulous, I want to keep track of every *single* line of SQL statements under the hook."
 
 
 ### IV. Summary 
