@@ -190,10 +190,9 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 
 - If you are from .NET family, you should think about [Entity Framework](https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-8.0/plan). 
 
-- if you are not using PostgreSQL, MySQL, SQLite, Microsoft SQL Server, MongoDB
-or CockroachDB then Prisma won't work for you. 
+- if you are not using PostgreSQL, MySQL, SQLite, Microsoft SQL Server, MongoDB or CockroachDB then Prisma won't work for you. 
 
-- ["The end justifies the means"](https://dictionary.cambridge.org/dictionary/english/end-justifies-the-means). If your applications are strongly coupled with database access, ORM may not suit you. 
+- ["The end justifies the means"](https://dictionary.cambridge.org/dictionary/english/end-justifies-the-means). If your applications strongly couples with database access, ORM may not suit you. 
 
 
 ### V. Reference
