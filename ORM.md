@@ -193,6 +193,8 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 - if you are not using PostgreSQL, MySQL, SQLite, Microsoft SQL Server, MongoDB
 or CockroachDB then Prisma won't work for you. 
 
+- ["The end justifies the means"](https://dictionary.cambridge.org/dictionary/english/end-justifies-the-means). If your applications are strongly coupled with database access, ORM may not suit you. 
+
 
 ### V. Reference
 1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
