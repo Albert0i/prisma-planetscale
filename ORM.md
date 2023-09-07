@@ -77,14 +77,12 @@ Prisma.sql`SELECT * FROM User WHERE email = ${email}`
 ```
 const prisma = new PrismaClient()
 
-const result: number =
-await prisma.$executeRaw`UPDATE User SET active = true WHERE emailValidated = true`
+const result = await prisma.$executeRaw`UPDATE User SET active = true WHERE emailValidated = true`
 
 const emailValidated = true
 const active = true
 
-const result: number =
-await prisma.$executeRaw`UPDATE User SET active = ${active} WHERE emailValidated = ${emailValidated};`
+const result = await prisma.$executeRaw`UPDATE User SET active = ${active} WHERE emailValidated = ${emailValidated};`
 ```
 
 > The method is implemented as a [tagged template](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates), which allows you to pass a template literal where you can easily insert your [variables](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access#using-variables). In turn, Prisma creates prepared statements that are safe from SQL injections. 
