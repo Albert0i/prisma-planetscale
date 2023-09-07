@@ -58,7 +58,7 @@ datasource db {
 }
 ```
 
-Done! From now on, you are equipped with everything you need to work with MYSQL database since [Prisma](https://www.prisma.io/) has provided [Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access) interface: 
+Done! From now on, you are equipped with everything you need to work with [MySQL](https://www.mysql.com/) database since [Prisma](https://www.prisma.io/) has provided [Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access) interface: 
 
 - `$queryRaw` to return actual records (for example, using `SELECT`)
 - `$executeRaw` to return a count of affected rows (for example, after an `UPDATE` or `DELETE`)
