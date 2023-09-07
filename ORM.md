@@ -174,6 +174,8 @@ Keeping model synchronized is tedious and error-prone. That's why Prisma has int
 ```
 npx prisma migrate dev
 ```
+![alt sync](img/sync.JPG)
+
 - Reruns the existing migration history in the [shadow database](https://www.prisma.io/docs/concepts/components/prisma-migrate/shadow-database) in order to detect schema drift (edited or deleted migration file, or a manual changes to the database schema)
 - Applies pending migrations to the shadow database (for example, new migrations created by colleagues)
 - Generates a new migration from any changes you made to the Prisma schema before running `migrate dev`
