@@ -215,6 +215,7 @@ CREATE TABLE fruits (
 
 insert into fruits(name) values('Ourang-Outangs');
 
+-- Old trick for the old dog
 DELIMITER $$
 CREATE TRIGGER before_update_fruits
 BEFORE UPDATE
