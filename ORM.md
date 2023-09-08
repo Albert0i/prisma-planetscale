@@ -196,6 +196,10 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 
 - ["The end justifies the means"](https://dictionary.cambridge.org/dictionary/english/end-justifies-the-means). If your applications strongly couples with database, ORM may not suit you. 
 
+- [crud](https://www.prisma.io/docs/concepts/components/prisma-client/crud) operations are handy especially in implementing [REST API](https://www.redhat.com/en/topics/api/what-is-a-rest-api). [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/concepts/components/prisma-client/aggregation-grouping-summarizing) are awkward/clumsy/embarrassing. 
+
+- All in all, SQL knowledge is essential, ORM is helpful in crud rather than analytic and statistic. This conclusion alwo apply to NonSQL database. SQL has unparalleled/unrivaled/unmatched power in data mining. 
+
 
 ### V. Reference
 1. [Prisma Course: Zero To Hero](https://youtu.be/yW6HnMUAWNU)
@@ -232,4 +236,4 @@ update fruits set name='Ourang-Outangs' where id=1;
 ```
 
 
-### EOF (2023/09/06)
+### EOF (2023/09/08)
