@@ -198,7 +198,7 @@ Things happen behind the scenes... All generated SQL DDL souces are saved under 
 
 - [crud](https://www.prisma.io/docs/concepts/components/prisma-client/crud) operations are handy especially in implementing [REST API](https://www.redhat.com/en/topics/api/what-is-a-rest-api). [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/concepts/components/prisma-client/aggregation-grouping-summarizing) are awkward/clumsy/embarrassing. 
 
-- All in all, SQL knowledge is essential, ORM is helpful in crud rather than analytic and statistic. This conclusion alwo apply to NonSQL database. SQL has unparalleled/unrivaled/unmatched power in data mining. 
+- All in all, SQL knowledge is essential, ORM is helpful in crud rather than analytic and statistic. This conclusion also apply to NonSQL database. SQL has unparalleled/unrivaled/unmatched power in data mining. 
 
 
 ### V. Reference
